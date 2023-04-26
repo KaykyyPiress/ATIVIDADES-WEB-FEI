@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(161, 197, 228)
+}
+
+#fundo{
+    margin: auto;
+    display: block;
+    margin-top: -306px;
+    background-color:white
+}
+
+
+#mycanvas{
+    border: 2px solid black;
+    margin: auto;
+    display: block;
+    margin-top: 150px;
+    background-color:white;
+}
+
