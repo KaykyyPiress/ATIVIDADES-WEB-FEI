@@ -7,7 +7,7 @@
     <title>Formulário</title>
     <style>
         body{
-            background-color: lightskyblue;
+            background-color: lightseagreen;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -32,7 +32,11 @@
         }
 
         input[type="email"]{
-            height: 17px;
+            height: 20px;
+        }
+
+        .preencher{
+            height: 20px;
         }
 
         button{
@@ -71,20 +75,30 @@
             font-weight: bold;
         }
 
+        #isenha{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #ilogin{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <h1> Cadastro </h1>
-    <form action="/cadastro" method="post"> <!--mudar metodo de get para post-->
+    <h1> Login </h1>
+    <form action="/login" method="post"> <!--mudar metodo de get para post-->
     <p class="divlogin">
         <label for="ilogin"> Login:</label>
-        <input type="email" name="login" id="ilogin" required minlength="10" size = "20" placeholder="digiteaqui@gmail.com"> <!--required não deixa o usuário entrar sem colocar nada no input
+        <input type="email" name="login" id="ilogin" required minlength="10" size = "25" placeholder="digiteaqui@gmail.com" class="preencher"> <!--required não deixa o usuário entrar sem colocar nada no input
                                                                                                 conndo max e linlength estabelece o numero maximo de caracteres-->
     </p>
     
     <p class="divsenha">
         <label for = "isenha"> Senha: </label>
-        <input type="password" name="senha" id="isenha" requiredminlength="5" maxlength="10" placeholder="Digite sua senha:">   <!-- comando type = password faz com que a caixa fiquem em formato de senha--> 
+        <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="Digite sua senha:" class="preencher">   <!-- comando type = password faz com que a caixa fiquem em formato de senha--> 
     </p>
 
     <p>
@@ -94,7 +108,7 @@
     </form>
 
     <div id="cadastro">
-        <p> Já tem conta? Entre agora mesmo <a href="flogin.html"><button><b>Entre</b></button></a></p>
+        <p> Não tem conta? Cadastre-se <a href="cadastra.html"><button><b>Cadastre-se</b></button></a></p>
     </div>
 
 </body>
